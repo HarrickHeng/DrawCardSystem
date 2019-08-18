@@ -1,0 +1,203 @@
+{
+    "mainpool_type": [
+        "UR",
+        "SSR",
+        "SR",
+        "R",
+        "N"
+    ],
+    "cards": [
+        {
+            "type": "UR",
+            "awardPool": [
+                "西雅图",
+                "腓特烈大帝",
+                "加斯特涅"
+            ],
+            "PR": 0.035,
+            "PR_Offset": 0.0003,
+            "isRare": true
+        },
+        {
+            "type": "SSR",
+            "awardPool": [
+                "胡德",
+                "俾斯麦",
+                "圣地亚哥",
+                "厌战"
+            ],
+            "PR": 0.07,
+            "PR_Offset": 0.0006,
+            "isRare": true
+        },
+        {
+            "type": "SR",
+            "awardPool": [
+                "罗德尼",
+                "伊丽莎白女王",
+                "克利夫兰",
+                "独角兽"
+            ],
+            "PR": 0.12,
+            "PR_Offset": 0.0016,
+            "isRare": true
+        },
+        {
+            "type": "R",
+            "awardPool": [
+                "布鲁克林",
+                "波特兰",
+                "弗莱彻",
+                "回声"
+            ],
+            "PR": 0.51,
+            "PR_Offset": 0.0016,
+            "isRare": false
+        },
+        {
+            "type": "N",
+            "awardPool": [
+                "奥利克",
+                "竞技神",
+                "小天鹅",
+                "唐斯"
+            ],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "西雅图",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "腓特烈大帝",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "加斯特涅",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "奥利克",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "竞技神",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "小天鹅",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "唐斯",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "布鲁克林",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "波特兰",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "弗莱彻",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "回声",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "罗德尼",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "伊丽莎白女王",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "克利夫兰",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "独角兽",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "胡德",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "俾斯麦",
+            "awardPool": [],
+            "PR": 0.27,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "圣地亚哥",
+            "awardPool": [],
+            "PR": 0.27,
+            "PR_Offset": 0,
+            "isRare": false
+        },
+        {
+            "type": "厌战",
+            "awardPool": [],
+            "PR": 0,
+            "PR_Offset": 0,
+            "isRare": false
+        }
+    ]
+}
