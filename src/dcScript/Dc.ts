@@ -117,7 +117,7 @@ class Dc {
                         egret.log("【" + this.DRAWNUM + "】" + "抽中卡片:" + this.selectCard.type);
                         egret.log("抽中名义概率:" + (this.selectPR * 100).toFixed(2) + "%");
                         CardFsm.getInstance().setlogs(log);
-                        this.showCard();
+                        // this.showCard();
                     }
                     this.resetCurPool();
                     this.selectPR = 1;
@@ -219,6 +219,16 @@ class Dc {
     private recordFsm(): void {
         CardFsm.getInstance().addUserCards(this.resCardPool);
         this.resCardPool = [];
+    }
+
+    /**显示拥有的牌库 */
+    public watchMyCards(): void {
+        let cards = CardFsm.getInstance().userCards;
+        for (let card of cards) {
+            let log = card.type + ':' + card.count;
+            egret.log(log);
+            CardFsm.getInstance().setlogs(log);
+        }
     }
 
     /**重置抽卡 */

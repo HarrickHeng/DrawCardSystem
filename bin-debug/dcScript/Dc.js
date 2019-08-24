@@ -103,7 +103,7 @@ var Dc = (function () {
                         egret.log("【" + this.DRAWNUM + "】" + "抽中卡片:" + this.selectCard.type);
                         egret.log("抽中名义概率:" + (this.selectPR * 100).toFixed(2) + "%");
                         CardFsm.getInstance().setlogs(log);
-                        this.showCard();
+                        // this.showCard();
                     }
                     this.resetCurPool();
                     this.selectPR = 1;
@@ -211,6 +211,16 @@ var Dc = (function () {
     Dc.prototype.recordFsm = function () {
         CardFsm.getInstance().addUserCards(this.resCardPool);
         this.resCardPool = [];
+    };
+    /**显示拥有的牌库 */
+    Dc.prototype.watchMyCards = function () {
+        var cards = CardFsm.getInstance().userCards;
+        for (var _i = 0, cards_1 = cards; _i < cards_1.length; _i++) {
+            var card = cards_1[_i];
+            var log = card.type + ':' + card.count;
+            egret.log(log);
+            CardFsm.getInstance().setlogs(log);
+        }
     };
     /**重置抽卡 */
     Dc.prototype.OnReset = function () {

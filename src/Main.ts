@@ -154,7 +154,7 @@ class Main extends eui.UILayer {
         this.reportLabel.textColor = 0xffffff;
         this.reportLabel.textAlign = "center";
         this.reportLabel.x = 100;
-        this.reportLabel.size = 35;
+        this.reportLabel.size = 25;
         this.reportGrp.addChild(this.reportLabel);
 
         this.reportSc = new eui.Scroller();
@@ -182,17 +182,24 @@ class Main extends eui.UILayer {
 
         let button = new eui.Button();
         button.label = "Draw";
-        button.horizontalCenter = 95;
+        button.horizontalCenter = 10;
         button.verticalCenter = 495;
         this.addChild(button);
         button.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onDcDrawCard, this);
 
         let resetBtn = new eui.Button();
         resetBtn.label = "Reset";
-        resetBtn.horizontalCenter = 195;
+        resetBtn.horizontalCenter = 115;
         resetBtn.verticalCenter = 495;
         this.addChild(resetBtn);
         resetBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onDcReset, this);
+
+        let watchBtn = new eui.Button();
+        watchBtn.label = "Watch";
+        watchBtn.horizontalCenter = 220;
+        watchBtn.verticalCenter = 495;
+        this.addChild(watchBtn);
+        watchBtn.addEventListener(egret.TouchEvent.TOUCH_TAP, this.onWatch, this);
 
         this.tf = new egret.TextField();
         this.tf.type = egret.TextFieldType.INPUT;
@@ -206,7 +213,7 @@ class Main extends eui.UILayer {
         this.tf.textAlign = egret.HorizontalAlign.CENTER;
         this.tf.verticalAlign = egret.VerticalAlign.MIDDLE;
         this.tf.size = 23;
-        this.tf.x = 80;
+        this.tf.x = 45;
         this.tf.y = 1037;
         this.addChild(this.tf);
         this.tf.addEventListener(egret.Event.FOCUS_IN, this.onfocusIn, this);
@@ -278,6 +285,11 @@ class Main extends eui.UILayer {
 
     private onDcReset(e: egret.TouchEvent) {
         this.dc.OnReset();
+        this.showlogs();
+    }
+
+    private onWatch() {
+        this.dc.watchMyCards();
         this.showlogs();
     }
 
